@@ -15,7 +15,7 @@
 
 ## Installation
 * Clone the repo [here](http://www.github.com/jameygronewald/employeeDirectory) and run  ```npm install```
-* Once you have repo cloned and dependencies installed, run  ```node server.js``` in the command line to start server on localhost:8080.
+* Once you have repo cloned and dependencies installed, run  ```node server.js``` in the command line to start server on localhost:3000.
 
 ## Usage
 1. View the deployed app [here]().
