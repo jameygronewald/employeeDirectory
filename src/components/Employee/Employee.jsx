@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import './Employee.css';
 
 class Employee extends Component {
+
     render() {
         return (
-            <div>
-                Your id is: {this.props.id}
+            <div className='row'>
+                <div>
+                    <h3>{this.props.firstName} {this.props.lastName}</h3>
+                </div>
             </div>
         );
     }
