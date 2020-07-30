@@ -5,7 +5,7 @@ class Employee extends Component {
     render() {
         return (
             <div>
-                
+                Your id is: {this.props.id}
             </div>
         );
     }

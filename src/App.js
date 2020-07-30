@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import Directory from "./components/Directory/Directory";
 
-function App() {
-  return (
-    <div>
-
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Directory name="Jamey"/>
+      </div>
+    );
+  }
 }
 
 export default App;
