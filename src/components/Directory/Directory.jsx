@@ -1,14 +1,23 @@
-import React, { Component } from 'react';
-import './Directory.css';
+import React, { Component } from "react";
+import "./Directory.css";
+import Employee from "../Employee/Employee";
+import employees from "../../dummyData.json";
 
 class Directory extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+  state = {
+    employees: employees,
+  };
+
+  render() {
+    return this.state.employees.map(employee => (
+      <div>
+        <Employee
+          firstName={employee.name.first}
+          lastName={employee.name.last}
+        />
+      </div>
+    ));
+  }
 }
 
 export default Directory;
