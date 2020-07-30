@@ -7,7 +7,8 @@ class Employee extends Component {
         return (
             <div className='row'>
                 <div>
-                    <h3>{this.props.firstName} {this.props.lastName}</h3>
+                    <h3>Name: {this.props.name.first} {this.props.name.last}</h3>
+                    <h3>Email: {this.props.email}</h3>
                 </div>
             </div>
         );
