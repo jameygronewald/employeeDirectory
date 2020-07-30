@@ -9,11 +9,9 @@ class Directory extends Component {
   };
 
   render() {
-    return this.state.employees.map(employee => (
+    return this.state.employees.map((employee, index) => (
       <div>
-        <Employee
-          {...employee}
-        />
+        <Employee key={index + 1} {...employee} />
       </div>
     ));
   }
