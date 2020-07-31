@@ -21,7 +21,7 @@ class App extends React.Component {
           placeholder="Filter by last name"
           onChange={this.handleChange}
         />
-        <Directory />
+        <Directory filter={this.state.filter}/>
       </div>
     );
   }
