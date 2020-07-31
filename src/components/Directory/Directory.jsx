@@ -9,12 +9,12 @@ class Directory extends Component {
   };
 
   render() {
-    return this.state.employees.map((employee, index) => (
+    const filteredEmployees = this.state.employees.filter(employee => this.props.filter.toLowerCase() === employee.name.last.slice(0, this.props.filter.length).toLowerCase());
+    return filteredEmployees.map((employee, index) => (
       <div>
         <Employee key={index + 1} {...employee} />
       </div>
     ))
-    // .filter(employee => );
   }
 }
 

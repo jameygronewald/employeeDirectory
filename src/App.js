@@ -7,8 +7,8 @@ class App extends React.Component {
     filter: "",
   };
 
-  handleChange = ({ target: { value } }) => {
-    this.setState({ filter: value });
+  handleChange = ({ target: { name, value } }) => {
+    this.setState({ [name]: value });
   };
 
   render() {
