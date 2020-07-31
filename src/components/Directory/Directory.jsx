@@ -13,7 +13,8 @@ class Directory extends Component {
       <div>
         <Employee key={index + 1} {...employee} />
       </div>
-    ));
+    ))
+    // .filter(employee => );
   }
 }
 
