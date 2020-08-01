@@ -1,5 +1,6 @@
 import React from "react";
 import Directory from "./components/Directory/Directory";
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
 class App extends React.Component {
@@ -14,6 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
+        <Navbar />
         <input
           value={this.state.filter}
           name="filter"

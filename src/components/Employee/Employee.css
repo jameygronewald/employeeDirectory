@@ -6,3 +6,7 @@
     background-color: #f4f4f4;
     border: solid black .5px;
 }
+
+img {
+    border-radius: 1.5px 8px;
+}
