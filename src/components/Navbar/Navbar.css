@@ -2,6 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #222;
+    background-color: darkcyan;
     color: #f4f4f4
 }
