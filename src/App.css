@@ -13,3 +13,8 @@ body {
     text-align: center;
     margin: 10px;
 }
+
+.tableHeaderRow {
+    display: flex;
+    justify-content: space-between;
+}
