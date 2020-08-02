@@ -16,14 +16,16 @@ class App extends React.Component {
     return (
       <div className="container">
         <Navbar />
-        <input
-          value={this.state.filter}
-          name="filter"
-          type="text"
-          placeholder="Filter by last name"
-          onChange={this.handleChange}
-        />
-        <Directory filter={this.state.filter}/>
+        <div className="inputRow">
+          <input
+            value={this.state.filter}
+            name="filter"
+            type="text"
+            placeholder="Filter by last name"
+            onChange={this.handleChange}
+          />
+        </div>
+        <Directory filter={this.state.filter} />
       </div>
     );
   }
