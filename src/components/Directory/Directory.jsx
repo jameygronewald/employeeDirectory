@@ -17,11 +17,17 @@ class Directory extends Component {
   };
 
   sortEmployees() {
-    return this.state.employees.sort((a, b) => a.email > b.email ? 1 : -1);
+    if (this.props.sort === 'name.last') {
+        return this.filterEmployees().sort((a, b) => a.name.last > b.name.last ? 1 : -1);
+    } else if (this.props.sort === 'email') {
+        return this.filterEmployees().sort((a, b) => a.email > b.email ? 1 : -1);
+    } else if (this.props.sort === 'dob.date') {
+        return this.filterEmployees().sort((a, b) => parseInt(a.dob.date) - parseInt(b.dob.date));
+    }
+    return this.filterEmployees();
   };
 
   render() {
-    // filteredEmployees.sort((a, b) => a.email - b.email);
     return this.sortEmployees().map((employee, index) => (
       <div>
         <Employee key={index + 1} {...employee} />
