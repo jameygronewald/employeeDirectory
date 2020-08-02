@@ -32,7 +32,7 @@ class App extends React.Component {
               <option value="">(none)</option>
               <option value="name.last">Last Name (A-Z)</option>
               <option value="email">Email (A-Z)</option>
-              <option value="dob.date">Year of Birth</option>
+              <option value="dob.date">Date of Birth (ascending)</option>
             </select>
           </div>
         </div>
