@@ -11,7 +11,7 @@ class Employee extends Component {
         </h3>
         <h3>{this.props.phone}</h3>
         <h3>{this.props.email}</h3>
-        <h3>{this.props.dob.date}</h3>
+        <h3>{this.props.dob.date.slice(0, 10)}</h3>
       </div>
     );
   }

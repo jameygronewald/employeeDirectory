@@ -12,9 +12,17 @@ class Directory extends Component {
     API.getEmployees().then(({ data: { results } }) => this.setState({ employees: results })).catch(err => console.log(err));
   };
 
+  filterEmployees() {
+    return this.state.employees.filter(employee => this.props.filter.toLowerCase() === employee.name.last.slice(0, this.props.filter.length).toLowerCase());
+  };
+
+  sortEmployees() {
+    return this.state.employees.sort((a, b) => a.email > b.email ? 1 : -1);
+  };
+
   render() {
-    const filteredEmployees = this.state.employees.filter(employee => this.props.filter.toLowerCase() === employee.name.last.slice(0, this.props.filter.length).toLowerCase());
-    return filteredEmployees.map((employee, index) => (
+    // filteredEmployees.sort((a, b) => a.email - b.email);
+    return this.sortEmployees().map((employee, index) => (
       <div>
         <Employee key={index + 1} {...employee} />
       </div>

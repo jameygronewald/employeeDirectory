@@ -4,9 +4,10 @@
     justify-content: space-between;
     padding: 5px;
     background-color: #f4f4f4;
-    border: solid black .5px;
+    border-top: solid darkcyan 1px;
 }
 
 img {
     border-radius: 1.5px 8px;
+    border: solid rgba(0, 2, 100, 0.6) 2px;
 }
