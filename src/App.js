@@ -36,6 +36,13 @@ class App extends React.Component {
             </select>
           </div>
         </div>
+        <div className="tableHeaderRow">
+          <h2>Image</h2>
+          <h2>Name</h2>
+          <h2>Phone Number</h2>
+          <h2>Email</h2>
+          <h2>Date of Birth</h2>
+        </div>
         <Directory filter={this.state.filter} sort={this.state.sort}/>
       </div>
     );
