@@ -2,11 +2,13 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Helvetica Narrow, sans-serif;
+    background-color: #222;
 }
 
 .searchRow {
     display: flex;
     justify-content: space-around;
+    color: #f4f4f4
 }
 
 .col {
@@ -17,4 +19,6 @@ body {
 .tableHeaderRow {
     display: flex;
     justify-content: space-between;
+    background-color: #222;
+    color: #f4f4f4;
 }

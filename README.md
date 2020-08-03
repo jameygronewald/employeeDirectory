@@ -1,9 +1,10 @@
 # Employee Directory
+React app that dynamically displays a table of employee information as components
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 ## Description
-
+Employee Directory is a front-end React app that displays a table of dynamically generated employee information and allows the user to filter and sort through the directory. The app uses the node package Axios to make a call to a 3rd party API called Random User Generator, and then uses array methods to manipulate state and update the employee table via user interaction with an input and dropdown.
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -15,10 +16,10 @@
 
 ## Installation
 * Clone the repo [here](http://www.github.com/jameygronewald/employeeDirectory) and run  ```npm install```
-* Once you have repo cloned and dependencies installed, run  ```node server.js``` in the command line to start server on localhost:3000.
+* Once you have repo cloned and dependencies installed, run  ```npm start``` in the command line to start server on localhost:3000.
 
 ## Usage
-1. View the deployed app [here]().
+1. View the deployed app [here](https://jameygronewald.github.io/employeeDirectory/).
 
 ## Images
 
