@@ -1,7 +1,7 @@
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5px;
     background-color: #f4f4f4;
     border-top: solid darkcyan 2px;
