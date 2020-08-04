@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Directory.css";
 import Employee from "../Employee/Employee";
 import API from "../../utils/API";
 

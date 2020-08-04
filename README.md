@@ -24,7 +24,8 @@ Employee Directory is a front-end React app that displays a table of dynamically
 ## Images
 
 ### Screenshots
-![Live App]()
+![Live app sorted by Date of Birth](./demoImages/appSorted.png)
+![Live app filtered by name and sorted by email address](./demoImages/appFilteredAndSorted.png)
 
 ## Contributing
 I am the sole contributor on this project.
